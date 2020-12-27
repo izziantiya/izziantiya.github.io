@@ -1,0 +1,111 @@
+/*ИНФОРМАЦИЯ О ПЕРСОНАЖАХ*/
+
+/*ГЛАВНАЯ СТИЛИЗАЦИЯ*/
+
+/*отступы*/
+.content {
+    padding: 1rem 3rem 0;
+}
+
+/*заголовки*/
+.h2-text {
+    font-family: Conthrax Bold, sans-serif;
+    font-size: 2rem;
+    width: 30rem;
+    border-bottom: 3px solid #219EBC;
+}
+
+.h2-text.orange {
+    color: #FCA311;
+}
+
+.h2-text.blue {
+    margin-top: 2rem;
+    color: #023047;
+}
+
+/*отсновной текст*/
+.text {
+    font: 1.6rem Tahoma;
+    font-weight: bold;
+    line-height: 130%;
+    padding: 1.5rem 0;
+}
+
+/*расположение картинок*/
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*картинки*/
+.images img {
+    margin: 2rem 0;
+    display: block;
+    height: 18rem;
+    width: 34rem;
+}
+
+/*видео*/
+iframe {
+    display: block;
+    height: 31rem;
+    width: 56rem;
+    margin: 2rem auto;
+}
+
+/*позиционирование для якорей*/
+.h2-text p {
+    position: relative;
+}
+.h2-text a {
+    position: absolute;
+    top: -12rem;
+}
+
+/*АДАПТИВ*/
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .images img {
+        height: 14rem;
+        width: 25rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .images img {
+        height: 12rem;
+        width: 23rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 1rem 1rem 0;
+    }
+
+    .h2-text {
+        width: 25rem;
+        font-size: 1.4rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .images img {
+        height: 16rem;
+        width: 28rem;
+    }
+
+    iframe {
+        height: 14rem;
+        width: 28rem;
+    }
+
+    .h2-text a {
+        top: -6rem;
+    }
+}

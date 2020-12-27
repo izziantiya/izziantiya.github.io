@@ -1,0 +1,106 @@
+/*СТРАНИЦА С ИНФОРМАЦИЕЙ*/
+
+/*ГЛАВНАЯ СТИЛИЗАЦИЯ*/
+
+/*отступы*/
+.content {
+    padding: 1rem 3rem 0;
+}
+
+/*размещение элементов*/
+.carts  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*заголовки*/
+.h2-text, .cart span, .question span {
+    font-family: Conthrax Bold, sans-serif;
+    font-size: 2rem;
+}
+
+.h2-text {
+    width: 40rem;
+    border-bottom: 3px solid #219EBC;
+}
+
+.h2-text.orange {
+    color: #FCA311;
+}
+
+.h2-text.blue {
+    margin: 1rem 0;
+    color: #023047;
+}
+
+/*карточки, вопросы и ответы*/
+.cart {
+    text-align: center;
+    margin: 4rem 0;
+    width: 26rem;
+}
+
+.cart img {
+    padding: 1rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.cart span, .question span {
+    display: block;
+    color: #219ebc;
+}
+
+.cart p, .question p {
+    font: 1.6rem Tahoma;
+    font-weight: bold;
+    color: #023047;
+    line-height: 130%;
+}
+
+.question p, .row-3 p {
+    padding: 1rem 0;
+}
+
+/*контакты*/
+.row-3 p {
+    font: 1.8rem Tahoma;
+    font-weight: bold;
+    color: #023047;
+}
+
+/*АДАПТИВ ДЛЯ ТЕЛЕФОНОВ*/
+
+@media (max-width: 767px) {
+    .content {
+        padding: 1rem 1rem 0;
+    }
+    .h2-text {
+        width: 25rem;
+    }
+
+    .h2-text, .cart span, .question span {
+        font-size: 1.4rem;
+    }
+
+    .cart {
+        margin: 2rem 0;
+        width: 22rem;
+    }
+
+    .cart img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .cart p, .question p {
+        font-size: 1.2rem;
+    }
+
+    .row-3 p {
+        font-size: 1.6rem;
+    }
+}
+

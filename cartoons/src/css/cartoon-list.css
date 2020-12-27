@@ -1,0 +1,116 @@
+/*НАСТРОЙКА КОНТЕНТА НА ГЛАВНОЙ СТРАНИЦЕ*/
+
+/*АДАПТИВ*/
+
+/*для очень больших экранов*/
+@media (min-width: 1751px) {
+    .cart .img.cartoon {
+        height: 28rem;
+        width: 28rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1750px){
+    .cart .img.cartoon {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .cart .img.test {
+        height: 40rem;
+        width: 50rem;
+    }
+}
+
+/*для больших и средних экранов*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .cart .img.cartoon {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .cart .img.test {
+        height: 50rem;
+        width: 60rem;
+    }
+}
+
+/*ГЛАВНАЯ СТИЛИЗАЦИЯ*/
+
+/*размещение контента на странице*/
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*стилизация карточки*/
+.cart {
+    margin: 4rem 0;
+    border: 3px solid #023047;
+    border-radius: 1rem;
+    height: 100%;
+}
+
+/*стилизация картинки внутри карточки*/
+.cart .img {
+    padding: 2rem 1.5rem;
+    object-fit: cover;
+}
+
+/*стилизация кнопки внутри карточки*/
+.cart .btn {
+    display: block;
+    line-height: 4rem;
+    text-decoration: none;
+    margin: 0 auto 2rem auto ;
+    background: #219ebc;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 1rem;
+    width: 25rem;
+}
+
+/*стилизация надписи внутри кнопки*/
+.btn span {
+    display: inline-block;
+    vertical-align: middle;
+    font: 1.6rem Conthrax Book;
+}
+
+.cart .btn:hover {
+    background-image: url(../img/btn-bg.gif);
+    color: #023047;
+}
+
+/*АДАПТИВ ДЛЯ ТЕЛЕФОНОВ*/
+
+@media (max-width: 767px) {
+    .cart {
+        margin: 2rem 0;
+        border: 2px solid #023047;
+    }
+
+    .cart .img {
+        padding: 1rem 0.5rem;
+    }
+    .cart .img.cartoon {
+        height: 16rem;
+        width: 16rem;
+    }
+
+    .cart .img.test {
+        height: 20rem;
+        width: 25rem;
+    }
+
+    .cart .btn {
+        line-height: 2rem;
+        width: 12.5rem;
+        margin: 0 auto 1rem auto;
+    }
+
+    .btn span {
+        font: 0.8rem Conthrax Book;
+    }
+}

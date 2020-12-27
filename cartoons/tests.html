@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tests</title>
+    <link rel="shortcut icon" href="src/img/cartoon-network.png" type="image/png">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/cartoon-list.css">
+    <script src="src/js/click.js"></script>
+</head>
+<body>
+<!--шапка страницы-->
+<div class="header">
+    <!--главная надпись-->
+    <div class="header-text">
+        <a href="cartoons.html">Cartoons</a>
+    </div>
+    <!--меню-->
+    <div class="menu">
+        <div class="row">
+            <a href="tests.html">Тесты</a>
+            <a href="characters.html">Персонажи</a>
+            <a href="information.html">Информация</a>
+        </div>
+        <div class="img-list" onclick="myClick()"><img src="src/img/list.png"></div>
+        <div id="dropdown" class="list">
+            <a href="tests.html"><li>Тесты</li></a>
+            <a href="characters.html"><li>Персонажи</li></a>
+            <a href="information.html"><li>Информация</li>
+            </a>
+        </div>
+    </div>
+</div>
+<!--основной контент-->
+<div class="wrapper">
+    <div class="content">
+        <div class="cart">
+            <img src="src/img/winx-test.jpg" alt="Winx" class="img test">
+            <a href="tests/winx-test.html" class="btn"><span>Пройти тест</span></a>
+        </div>
+        <div class="cart">
+            <img src="src/img/pony-test.jpeg" alt="MLP" class="img test">
+            <a href="tests/pony-test.html" class="btn"><span>Пройти тест</span></a>
+        </div>
+        <div class="cart">
+            <img src="src/img/star-test.jpg" alt="Star" class="img test">
+            <a href="tests/star-test.html" class="btn"><span>Пройти тест</span></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/*СТРАНИЦА ТЕСТОВ*/
+
+/*ГЛАВНАЯ СТИЛИЗАЦИЯ*/
+
+/*отступы*/
+.info {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*для всех элементов*/
+.info * {
+    margin: 1rem 0;
+}
+/*шрифт*/
+.h2-text, .number {
+    font-family: Conthrax Bold, sans-serif;
+    font-size: 2rem;
+}
+
+.text, .question, .choice-text {
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+/*разделы*/
+.h2-text {
+    width: 30rem;
+    border-bottom: 3px solid #219EBC;
+}
+
+.h2-text.orange {
+    color: #FCA311;
+}
+
+.h2-text.blue, .text {
+    color: #023047;
+}
+
+/*текст*/
+.text, .question {
+    font-size: 1.8rem;
+}
+
+/*центрирование*/
+.img, .test {
+    align-self: center;
+}
+
+/*картинка*/
+.img {
+    width: 60rem;
+    height: 35rem;
+    object-fit: cover;
+}
+
+/*тест (форма)*/
+.test {
+    border: 3px solid #023047;
+    border-radius: 1rem;
+    width: 60rem;
+    padding: 0 1rem 1rem;
+}
+
+.choice-text {
+    font-size: 1.6rem;
+}
+
+label, .btn {
+    cursor: pointer;
+}
+/*кнопка*/
+.btn {
+    margin: 0;
+    height: 3rem;
+    width: 25rem;
+    background: #219ebc;
+    text-align: center;
+    color: #ffffff;
+    font: 2rem Conthrax Book;
+    border-radius: 1rem;
+    margin-left: 57%;
+}
+
+.btn:hover {
+    background-image: url(../img/btn-bg.gif);
+    color: #023047;
+}
+
+.result-form {
+    font: 2rem Conthrax Bold;
+    text-align: center;
+}
+
+/*АДАПТИВ ДЛЯ ТЕЛЕФОНОВ*/
+@media (max-width: 767px) {
+    .info {
+        padding: 0 1rem;
+    }
+
+    .h2-text {
+        width: 25rem;
+    }
+
+    .h2-text, .number {
+        font-size: 1.4rem;
+    }
+    .text, .question {
+        font-size: 1.2rem;
+    }
+
+    .img {
+        width: 27rem;
+        height: 18rem;
+    }
+
+    .test {
+        width: 27rem;
+    }
+
+    .choice-text {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        height: 2rem;
+        width: 12rem;
+        font: 1rem Conthrax Book;
+    }
+}

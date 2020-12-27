@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test My Little Pony</title>
+    <link rel="shortcut icon" href="../src/img/cartoon-network.png" type="image/png">
+    <link rel="stylesheet" href="../src/css/header.css">
+    <link rel="stylesheet" href="../src/css/test.css">
+    <script src="../src/js/click.js"></script>
+</head>
+<body>
+<!--шапка страницы-->
+<div class="header">
+    <!--главная надпись-->
+    <div class="header-text">
+        <a href="../cartoons.html">Cartoons</a>
+    </div>
+    <!--меню-->
+    <div class="menu">
+        <div class="row">
+            <a href="../tests.html">Тесты</a>
+            <a href="../characters.html">Персонажи</a>
+            <a href="../information.html">Информация</a>
+        </div>
+        <div class="img-list" onclick="myClick()"><img src="../src/img/list.png"></div>
+        <div id="dropdown" class="list">
+            <a href="../tests.html"><li>Тесты</li></a>
+            <a href="../characters.html"><li>Персонажи</li></a>
+            <a href="../information.html"><li>Информация</li>
+            </a>
+        </div>
+    </div>
+</div>
+<!--основной контент-->
+<div class="wrapper">
+    <div class="content">
+        <div class="info">
+            <h2 class="h2-text orange">Кто вы из “My Little Pony”</h2>
+            <p class="text">Кем вам довелось бы стать в радужном волшебном мире пони? Между прочим, знать, какая из
+                основных героинь вам ближе — это как посмотреть свой психологический портрет, только ярче! И безумнее,
+                но это ничего, правда же?</p>
+            <img class="img" src="../src/img/pony-test.jpg" alt="Pony">
+            <h2 class="h2-text blue">Тест</h2>
+            <div class="test">
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../src/js/test.js"></script>
+<script >initialize("pony");</script>
+</body>
+</html>

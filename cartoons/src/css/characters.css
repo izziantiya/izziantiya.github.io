@@ -1,0 +1,131 @@
+/*НАВИГАЦИЯ ПО ПЕРСОНАЖАМ*/
+
+/*ГЛАВНАЯ СТИЛИЗАЦИЯ*/
+
+/*отступы*/
+.content {
+    padding: 1rem 3rem 0;
+}
+
+/*размещение элементов*/
+.carts  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*заголовки*/
+.h2-text {
+    font-family: Conthrax Bold, sans-serif;
+    font-size: 2rem;
+    width: 30rem;
+    border-bottom: 3px solid #219EBC;
+}
+
+.h2-text.orange {
+    color: #FCA311;
+}
+
+.h2-text.blue {
+    margin-top: 2rem;
+}
+
+.h2-text.blue a {
+    text-decoration: none;
+    color: #023047;
+}
+
+/*карточки*/
+.cart {
+    margin: 1rem 0;
+    width: 45%;
+}
+
+/*контент*/
+.info  {
+    margin-top: 2rem;
+    border: 3px solid #023047;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.info ul, .info img {
+    vertical-align: middle;
+}
+
+/*список ссылок*/
+.info ul {
+    font: 1.8rem Tahoma;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.info li {
+    list-style-image: url(../img/list-style.png);
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+.info li a {
+    text-decoration: none;
+    color: #023047;
+}
+
+/*картинка*/
+.info img {
+    object-fit: cover;
+    margin-left: 25%;
+    height: 14rem;
+    width: 18rem;
+}
+
+.info li a:hover {
+    color: #FCA311;
+}
+
+
+/*АДАПТИВ*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .info img {
+        margin-left: 0;
+        height: 12rem;
+        width: 16rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cart {
+        width: 48%;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 1rem 1rem 0;
+    }
+
+    .cart {
+        width: 100%;
+    }
+
+    .h2-text {
+        width: 25rem;
+        font-size: 1.4rem;
+    }
+
+    .info ul {
+        font-size: 1.4rem;
+    }
+
+    .info li {
+        list-style-image: url(../img/list-style-tel.png);
+    }
+
+    .info img {
+        margin-left: 10%;
+        height: 12rem;
+        width: 16rem;
+    }
+}
