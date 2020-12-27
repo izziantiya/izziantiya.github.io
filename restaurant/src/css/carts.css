@@ -1,0 +1,136 @@
+.wrapper {
+    margin-top: 8rem;
+}
+
+.content {
+    min-height: calc(100vh - 10rem);
+}
+
+.row-1, .row-2, .row-3 {
+    padding: 0 10%;
+}
+
+.row-1, .row-3 {
+    text-align: center;
+}
+
+.row-2 {
+    background-color: #5f0f40;
+}
+
+.carts, .row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*шрифт*/
+h2, .cart span {
+    font-family: Circe;
+    font-weight: bold;
+}
+
+/*хэддер*/
+h2 {
+    font-size: 3.5rem;
+    padding-top: 2rem;
+}
+
+/*карточки*/
+.cart {
+    margin: 6rem 0;
+    border-radius: 1rem;
+    width: 26rem;
+}
+
+.cart img {
+    padding: 1rem 0;
+    height: 8rem;
+    width: 8rem;
+}
+
+.cart span {
+    display: block;
+    font-size: 2.5rem;
+    color: #fb8b24;
+}
+
+.cart p, .row-3 p {
+    font: 2.2rem Circe;
+    color: #5f0f40;
+    line-height: 100%;
+}
+
+/*картинки*/
+.item {
+    padding: 2rem 0;
+    width: 26rem;
+    height: 20rem;
+}
+
+.row-3 p {
+    margin: 4rem 0;
+}
+
+/*АДАПТИВ*/
+/*для больших и средних экранов*/
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .cart, .item {
+        width: 30rem;
+    }
+}
+
+/*АДАПТИВ ДЛЯ ТЕЛЕФОНОВ*/
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin-top: 6rem;
+    }
+    .content {
+        min-height: calc(100vh - 6rem);
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding-top: 1rem;
+    }
+
+    .cart {
+        margin: 2rem 0;
+    }
+
+    .cart img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .cart span {
+        font-size: 2rem;
+    }
+
+    .cart p {
+        font: 1.2rem Circe;
+    }
+
+    .row-2 {
+        padding: 0;
+    }
+
+    .item {
+        width: 15rem;
+        height: 11rem;
+    }
+
+    .row-3 p {
+        font-size: 2rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 767px) {
+    .item {
+        width: 17rem;
+        height: 13rem;
+    }
+
+}

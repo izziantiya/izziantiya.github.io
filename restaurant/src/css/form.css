@@ -1,0 +1,133 @@
+/*картинка*/
+body {
+    background: url(../img/img-header.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*информация*/
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 10rem);
+}
+/*шрифт*/
+.reserv * {
+    font-family: Circe, sans-serif;
+}
+/*валидация*/
+.error, #error {
+    font-size: 1.5rem;
+    color: red;
+}
+
+/*форма*/
+.reserv {
+    margin-top: 8rem;
+    width: 40%;
+    background-color: white;
+    border: 3px solid #5f0f40;
+}
+
+.reserv-content {
+    padding: 2rem;
+}
+
+.reserv-content h2 {
+    font-size: 2rem;
+    color: #5f0f40;
+}
+
+.field, #my-time {
+    font-size: 1.5rem;
+    color: #5f0f40;
+}
+
+.field {
+    border: 2px solid #fb8b24;
+    margin-bottom: 1rem;
+}
+
+#my-time {
+    background-color: gainsboro;
+}
+.choice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.time-choice {
+    width: 9rem;
+}
+
+input[type="radio"] {
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.reserv label {
+    padding: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #5f0f40;
+    background-color: gainsboro;
+    border: 2px solid darkgray;
+    border-radius: 1rem;
+}
+
+.btn {
+    display: block;
+    margin: 1rem auto 0 auto;
+    line-height: 3rem;
+    font-size: 2rem;
+    background: #5f0f40;
+    color: #fb8b24;
+    text-align: center;
+    width: 20rem;
+    border: 3px solid #fb8b24;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+/*наведение на кнопку*/
+.btn:hover{
+    background-color: #9a031e;
+}
+
+/*АДАПТИВ*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .reserv {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        min-height: calc(100vh - 6rem);
+    }
+
+    .reserv {
+        margin-top: 6rem;
+        width: 80%;
+    }
+
+    .reserv-content h2 {
+        font-size: 1.8rem;
+    }
+
+    input[type="radio"] {
+        margin-bottom: 2rem;
+    }
+
+    .reserv label {
+        padding: 2px;
+    }
+
+    .btn {
+        font-size: 1.8rem;
+        width: 18rem;
+    }
+}
+

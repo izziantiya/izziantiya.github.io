@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Меню</title>
+    <link rel="shortcut icon" href="src/img/coffee-cup.png" type="image/png">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <script src="src/js/click.js"></script>
+</head>
+<body>
+<!--шапка страницы-->
+<div class="header">
+    <!--главная надпись-->
+    <div class="header-text">
+        <a href="header.html">Ресторан</a>
+    </div>
+    <!--меню-->
+    <div class="menu">
+        <div class="row">
+            <a href="menu.html">Меню</a>
+            <a href="stocks.html">Акции</a>
+            <a href="information.html">Информация</a>
+        </div>
+        <div class="menu-type">
+            <a href="#breakfast" class="type-1">Завтраки</a>
+            <a href="#salad" class="type-2">Салаты</a>
+            <a href="#soup" class="type-3">Супы</a>
+            <a href="#lunch" class="type-4">Вторые блюда</a>
+            <a href="#cake" class="type-5">Десерты</a>
+            <a href="#drink" class="type-6">Напитки</a>
+        </div>
+        <div class="img-list" onclick="menuClick()"><img src="src/img/list-text.png"></div>
+        <div id="dropdown" class="list">
+            <a href="menu.html"><li>Меню</li></a>
+            <a href="stocks.html"><li>Акции</li></a>
+            <a href="information.html"><li>Информация</li></a>
+        </div>
+    </div>
+</div>
+<div id="img-type" class="img-menu-type" onclick="menuTypeClick()"></div>
+<div id="menu-type-dropdown" class="list-type">
+    <a href="#breakfast" class="type-1"><li>Завтраки</li></a>
+    <a href="#salad" class="type-2"><li>Салаты</li></a>
+    <a href="#soup" class="type-3"><li>Супы</li></a>
+    <a href="#lunch" class="type-4"><li>Вторые блюда</li></a>
+    <a href="#cake" class="type-5"><li>Десерты</li></a>
+    <a href="#drink" class="type-6"><li>Напитки</li></a>
+</div>
+<div class="wrapper">
+    <div class="content">
+        <h2><p><a name="breakfast"></a></p>Завтраки</h2>
+        <div class="carts-type">
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu2.jpeg"></div>
+                <p class="name">Сырники с бельгийским шоколадом</p>
+                <a href="menu-items/menu-item-1.html"><span>Подробнее</span></a>
+            </div>
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu3.jpeg"></div>
+                <p class="name">Омлет с ветчиной, сыром чеддер и хашбрауном</p>
+                <a href="menu-items/menu-item-2.html"><span>Подробнее</span></a>
+            </div>
+        </div>
+        <h2><p><a name="salad"></a></p>Салаты</h2>
+        <div class="carts-type">
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu4.jpeg"></div>
+                <p class="name">Салат Цезарь с курицей</p>
+                <a href="menu-items/menu-item-3.html"><span>Подробнее</span></a>
+            </div>
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu5.jpeg"></div>
+                <p class="name">Винегрет с копченым лососем</p>
+                <a href="menu-items/menu-item-4.html"><span>Подробнее</span></a>
+            </div>
+        </div>
+        <h2><p><a name="soup"></a></p>Супы</h2>
+        <div class="carts-type">
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu8.jpeg"></div>
+                <p class="name">Суп-пюре из шампиньонов со сливками</p>
+                <a href="menu-items/menu-item-5.html"><span>Подробнее</span></a>
+            </div>
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu9.jpeg"></div>
+                <p class="name">Суп Том Ям</p>
+                <a href="menu-items/menu-item-6.html"><span>Подробнее</span></a>
+            </div>
+        </div>
+        <h2><p><a name="lunch"></a></p>Вторые блюда</h2>
+        <div class="carts-type">
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu6.jpeg"></div>
+                <p class="name">Цыпленок запеченный с картофелем</p>
+                <a href="menu-items/menu-item-7.html"><span>Подробнее</span></a>
+            </div>
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu7.jpeg"></div>
+                <p class="name">Спагетти карбонара</p>
+                <a href="menu-items/menu-item-8.html"><span>Подробнее</span></a>
+            </div>
+        </div>
+        <h2><p><a name="cake"></a></p>Десерты</h2>
+        <div class="carts-type">
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu12.jpeg"></div>
+                <p class="name">Морковный кекс с цукатами и грецкими орехами</p>
+                <a href="menu-items/menu-item-9.html"><span>Подробнее</span></a>
+            </div>
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu1.jpeg"></div>
+                <p class="name">Чизкейк с шоколадом</p>
+                <a href="menu-items/menu-item-10.html"><span>Подробнее</span></a>
+            </div>
+        </div>
+        <h2><p><a name="drink"></a></p>Напитки</h2>
+        <div class="carts-type">
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu10.jpeg"></div>
+                <p class="name">Клубничный смузи с персиком и грушей</p>
+                <a href="menu-items/menu-item-11.html"><span>Подробнее</span></a>
+            </div>
+            <div class="cart">
+                <div class="img-cart"><img src="src/img/menu11.jpeg"></div>
+                <p class="name">Напиток ягодный из черной смородины</p>
+                <a href="menu-items/menu-items-12.html"><span>Подробнее</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="src/img/vk-social-logotype.png" alt="vk">
+        <img src="src/img/instagram.png" alt="instagramm">
+        <img src="src/img/facebook.png" alt="facebook"> <br>
+        <span>2020</span>
+    </div>
+</div>
+</body>
+</html>

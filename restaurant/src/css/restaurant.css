@@ -1,0 +1,96 @@
+/*картинка*/
+body {
+    background: url(../img/img-header.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*информация*/
+.info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    min-height: calc(100vh - 10rem);
+}
+
+.info, .reserv, .best, .btn-reserv {
+    color: #fb8b24;
+    font: 2rem Circe;
+}
+
+.info, .reserv, .best {
+    line-height: 1.5;
+}
+
+.reserv {
+    margin-top: 10rem;
+    border-top: 6px solid #5f0f40;
+    border-left: 6px solid #5f0f40;
+}
+
+.btn-reserv {
+    display: block;
+    line-height: 5rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    background: #5f0f40;
+    text-align: center;
+    width: 25rem;
+    border: 3px solid #fb8b24;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.best {
+    border-bottom: 6px solid #5f0f40;
+    border-right: 6px solid #5f0f40;
+}
+
+.reserv, .best {
+    width: 55rem;
+    padding: 5rem;
+}
+
+/*наведение на кнопку*/
+.btn-reserv:hover{
+    background-color: #9a031e;
+}
+
+/*АДАПТИВ ДЛЯ ТЕЛЕФОНОВ*/
+@media (max-width: 767px) {
+    .info-header {
+        padding-top: 20rem;
+        min-height: calc(100vh - 6rem);
+    }
+
+    .info-header * {
+        font: 1.6rem Circe;
+    }
+
+    .btn-reserv {
+        line-height: 3rem;
+        width: 20rem;
+        font-size: 2rem;
+    }
+
+    .reserv {
+        margin-top: 8rem;
+        border-top: 4px solid #5f0f40;
+        border-left: 4px solid #5f0f40;
+    }
+
+    .best {
+        border-bottom: 4px solid #5f0f40;
+        border-right: 4px solid #5f0f40;
+    }
+
+    .reserv, .best {
+        width: 26rem;
+        padding: 1.5rem;
+    }
+}
+
+
+

@@ -1,0 +1,154 @@
+.wrapper {
+    margin-top: 8rem;
+}
+
+.content {
+    padding: 0 10%;
+    min-height: calc(100vh - 10rem);
+}
+
+.content * {
+    font-family: Circe, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.img-head img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one, .two, .three {
+    width: 28%;
+}
+
+.one .title {
+    font-size: 2rem;
+    color: #5f0f40;
+}
+
+.one .head {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color: #fb8b24;
+}
+
+.label {
+    font-size: 2rem;
+    color: #5f0f40;
+    border-bottom: 3px solid #fb8b24;
+    margin-bottom: 1rem;
+}
+
+.two li {
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+
+.two li .head {
+    margin-left: 2rem;
+}
+
+.margin {
+    margin-top: 2rem;
+}
+
+.info-label {
+    font-size: 2rem;
+}
+
+.btn-back {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.btn-back a {
+    text-decoration: none;
+    font: 3rem Circe;
+    padding: 0.5rem;
+    color: #fb8b24;
+    background-color: #5f0f40;
+    border: 3px solid #fb8b24;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.btn-back a:hover {
+    background-color: #9a031e;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .one, .two, .three {
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .one, .two, .three {
+        width: 27%;
+    }
+    .info-label {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin-top: 6rem;
+    }
+
+    .content {
+        min-height: calc(100vh - 6rem);
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .img-head img{
+        height: 10rem;
+    }
+
+    .one, .two, .three {
+        width: 100%;
+    }
+
+    .one .title {
+        font-size: 1.8rem;
+    }
+
+    .one .head {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .label {
+        font-size: 2rem;
+        color: #5f0f40;
+        border-bottom: 3px solid #fb8b24;
+        margin: 2rem 0;
+    }
+
+    .two li {
+        font-size: 1.8rem;
+    }
+
+    .info-label {
+        font-size: 1.6rem;
+    }
+
+    .btn-back a {
+        font: 2rem Circe;
+    }
+}

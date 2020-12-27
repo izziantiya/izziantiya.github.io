@@ -1,0 +1,197 @@
+/*НАСТРОЙКА ШАПКИ СТРАНИЦЫ И ФОНА*/
+/*шрифты*/
+@font-face {
+    font-family: Boyarsky;
+    src: url(../fonts/4217.ttf);
+}
+@font-face {
+    font-family: Circe;
+    src: url(../fonts/CirceRegular.ttf);
+}
+
+/*базовые настройки*/
+* { outline: 0; padding: 0; margin: 0; border: 0; }
+html {font-size: 10px;}
+body {box-sizing: border-box;}
+
+/*АДАПТИВ*/
+
+/*для очень больших экранов*/
+@media (min-width: 1200px) {
+    .img-list, .list {display: none;}
+}
+
+/*для больших и средних экранов*/
+@media (min-width: 768px) and (max-width: 1200px) {
+    .row {display: none;}
+}
+
+/*ГЛАВНАЯ СТИЛИЗАЦИЯ*/
+
+/*шапка страницы*/
+.header {
+    /*установка фиксированной позиции*/
+    position: fixed;
+    top: 0;
+    height: 8rem;
+    width: 100%;
+    background: rgba(95, 15, 64, 0.8);
+    /*применение flex для расположения блоков*/
+    display: flex;
+    justify-content: space-between;
+}
+
+/*расположение элементов по вертикали*/
+.header-text a, .row, .img-list {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*стилизация ссылок шапки*/
+.header-text a, .row a, .list a {
+    text-decoration: none;
+}
+
+/*стилизация меню*/
+.row a, .list a {
+    font-family: Boyarsky, sans-serif;
+    padding: 0 2rem;
+}
+
+/*главная подпись*/
+.header-text {width: 34rem;}
+
+/*стилизация ссылки главной надписи*/
+.header-text a {
+    display: block;
+    padding: 0 4rem;
+    font-size: 5rem;
+    color: #fb8b24;
+    letter-spacing: 3px;
+    font-family: Boyarsky, sans-serif;
+}
+
+/*меню*/
+.row {
+    width: 50rem;
+    text-align: center;
+}
+
+/*стилизация ссылок в меню*/
+.row a, .list a {
+    font-size: 2.3rem;
+    color: #fb8b24;
+}
+
+/*кнопка для выпадающего списка*/
+.img-list {
+    padding: 0 2rem;
+}
+
+/*выпадающий список*/
+.list {
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    left: 70%;
+    width: 30%;
+    height: 23rem;
+    background: rgba(95, 15, 64, 0.8);
+    text-align: center;
+
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: .3s;
+}
+
+/*элементы выпадающего списка*/
+.list a {
+    display: block;
+    margin: 0 2rem;
+    padding: 2rem 0;
+    list-style: none;
+    border-bottom: 3px solid #FCA311;
+    color: #fca311;
+}
+
+/*действует при нажатии на кнопку*/
+.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/*эффект при наведении*/
+.row a:hover, .list a:hover{
+    color: white;
+}
+
+/*футер*/
+.footer {
+    background-color: #5f0f40;
+    height: 10rem;
+    text-align: center;
+}
+
+.footer img {
+    margin: 1rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+.footer span {
+    font-family: Circe, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/*АДАПТИВ ДЛЯ ТЕЛЕФОНОВ*/
+
+@media (max-width: 767px) {
+    .row {display: none;}
+    .header {
+        height: 6rem;
+        background: rgba(95, 15, 64, 1);
+    }
+
+    .header-text a {
+        font-size: 3rem;
+        padding: 0 2rem;
+    }
+
+    .img-list {
+        padding: 0 1rem;
+    }
+
+    .img-list img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .list {
+        height: 13rem;
+        left: 0;
+        width: 100%;
+        background: rgba(95, 15, 64, 1);
+    }
+
+    .list a {
+        font-size: 1.6rem;
+        padding: 0.8rem 0;
+    }
+
+    .footer {
+        height: 6rem;
+    }
+
+    .footer img {
+        margin: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .footer span {
+        font-size: 1rem;
+    }
+}

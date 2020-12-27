@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Забронировать стол</title>
+    <link rel="shortcut icon" href="src/img/coffee-cup.png" type="image/png">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/form.css">
+    <script src="src/js/click.js"></script>
+</head>
+<body>
+<!--шапка страницы-->
+<div class="header">
+    <!--главная надпись-->
+    <div class="header-text">
+        <a href="header.html">Ресторан</a>
+    </div>
+    <!--меню-->
+    <div class="menu">
+        <div class="row">
+            <a href="menu.html">Меню</a>
+            <a href="stocks.html">Акции</a>
+            <a href="information.html">Информация</a>
+        </div>
+        <div class="img-list" onclick="menuClick()"><img src="src/img/list-text.png"></div>
+        <div id="dropdown" class="list">
+            <a href="menu.html"><li>Меню</li></a>
+            <a href="stocks.html"><li>Акции</li></a>
+            <a href="information.html"><li>Информация</li>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="content">
+        <form action="#" class="reserv" novalidate>
+            <div class="reserv-content">
+                <h2>Ваше имя</h2>
+                <input type="text" class="field name" pattern="^[А-Яа-яЁё]+$" size="20">
+
+                <h2>Ваш номер телефона</h2>
+                <input type="tel" class="field tel" pattern="[0-9]{11}" size="20">
+
+                <h2>Выберете дату</h2>
+                <input type="date" class="field date">
+
+                <h2>Выберете удобное время</h2>
+                <span id="error"></span> <br> <br>
+                <div class="choice">
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-1">
+                        <label for="time-reserv-1">11:00</label>
+                    </div>
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-2">
+                        <label for="time-reserv-2">12:00</label>
+                    </div>
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-3">
+                        <label for="time-reserv-3">14:00</label>
+                    </div>
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-4">
+                        <label for="time-reserv-1">15:00</label>
+                    </div>
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-5">
+                        <label for="time-reserv-5">16:00</label>
+                    </div>
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-6">
+                        <label for="time-reserv-6">18:00</label>
+                    </div>
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-7">
+                        <label for="time-reserv-7">19:00</label>
+                    </div>
+                    <div class="time-choice">
+                        <input type="radio" name="radio" class="time" id="time-reserv-8">
+                        <label for="time-reserv-8">20:00</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn" value="Отправить">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <img src="src/img/vk-social-logotype.png" alt="vk">
+        <img src="src/img/instagram.png" alt="instagram">
+        <img src="src/img/facebook.png" alt="facebook"> <br>
+        <span>2020</span>
+    </div>
+</div>
+<script src="src/js/validateForm.js"></script>
+</body>
+</html>

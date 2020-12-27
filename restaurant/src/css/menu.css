@@ -1,0 +1,220 @@
+/*дополнительная менюшка (для болиших экранов)*/
+.menu-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background: rgba(180, 180, 180, 0.8);
+    text-align: center;
+}
+
+.menu-type a {
+    display: block;
+    text-decoration: none;
+    color: dimgrey;
+    font: 2rem Circe;
+    padding: 0 4rem;
+}
+
+.menu-type a:hover {
+    color: #5f0f40;
+    border-bottom: 3px solid #fb8b24;
+}
+
+/*для того чтобы не было два выпадающих меню сверху*/
+.img-menu-type {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+
+    height: 10rem;
+    width: 10rem;
+    background: url(../img/add.png);
+    background-size: cover;
+}
+
+.list-type {
+    position: fixed;
+    visibility: hidden;
+    left: 48%;
+    width: 50%;
+    height: 45rem;
+    bottom: 15rem;
+
+    background-color: #5f0f40;
+    text-align: center;
+
+    opacity: 0;
+    transform: translate(0, 30px);
+    transition: .3s;
+}
+
+/*элементы выпадающего списка*/
+.list-type a {
+    display: block;
+    margin: 0 2rem;
+    padding: 2rem 0;
+    font: 2rem Circe;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 3px solid #FCA311;
+    color: #fca311;
+}
+
+/*действует при нажатии на кнопку*/
+.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.btn-cross {
+    background: url(../img/cancel.png);
+    background-size: cover;
+}
+/*КОНТЕНТ*/
+.wrapper {
+    margin-top: 12rem;
+}
+
+.content {
+    padding: 0 10%;
+    min-height: calc(100vh - 10rem);
+}
+
+/*заголовки*/
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+    font: 2.5rem Circe;
+    font-weight: bold;
+}
+
+/*позиционирование для якорей*/
+h2 p {
+    position: relative;
+}
+h2 a {
+    position: absolute;
+    top: -12rem;
+}
+
+/*карточки меню*/
+.carts-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-cart {
+    border-bottom: 3px solid #fb8b24;
+}
+
+.img-cart img {
+    height: 24rem;
+    width: 36rem;
+    margin: 1rem;
+    object-fit: cover;
+}
+
+/*подписи внизу*/
+.cart p, .cart a {
+    margin: 1.5rem 0;
+    vertical-align: middle;
+}
+
+.cart p {
+    display: inline-block;
+    font: 1.8rem Circe;
+    width: 25rem;
+    color: #5f0f40;
+}
+
+.cart a {
+    text-decoration: none;
+    font: 2rem Circe;
+    padding: 0 1rem;
+    color: #fb8b24;
+    background-color: #5f0f40;
+    transition: 1s;
+}
+
+.cart a:hover {
+    background-color: #9a031e;
+}
+
+/*АДАПТИВ*/
+
+/*для очень больших экранов*/
+@media (min-width: 1200px) {
+    .menu-type-dropdown, .img-menu-type {display: none;}
+}
+
+/*для больших и средних экранов*/
+@media (min-width: 768px) and (max-width: 1200px) {
+    .menu-type {display: none;}
+    .wrapper {
+        margin-top: 8rem;
+    }
+    h2 a {
+        top: -8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-type {display: none;}
+    .wrapper {
+        margin-top: 6rem;
+    }
+    .content {
+        min-height: calc(100vh - 6rem);
+    }
+    h2 a {
+        top: -6rem;
+    }
+
+    .img-menu-type {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    .list-type {
+        bottom: 10rem;
+        height: 28rem;
+    }
+
+    .list-type a {
+        margin: 0 1rem;
+        padding: 1rem 0;
+        font: 1.5rem Circe;
+    }
+
+    h2 {
+        font: 2rem Circe;
+        font-weight: bold;
+    }
+
+    .img-cart img {
+        height: 12rem;
+        width: 24rem;
+    }
+
+    .cart p {
+        font: 1.3rem Circe;
+        width: 16rem;
+    }
+
+    .cart a {
+        text-decoration: none;
+        font: 1.5rem Circe;
+    }
+}
+
+

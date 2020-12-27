@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кекс</title>
+    <link rel="shortcut icon" href="../src/img/coffee-cup.png" type="image/png">
+    <link rel="stylesheet" href="../src/css/header.css">
+    <link rel="stylesheet" href="../src/css/menu-items.css">
+    <script src="../src/js/click.js"></script>
+</head>
+<body>
+<!--шапка страницы-->
+<div class="header">
+    <!--главная надпись-->
+    <div class="header-text">
+        <a href="../header.html">Ресторан</a>
+    </div>
+    <!--меню-->
+    <div class="menu">
+        <div class="row">
+            <a href="../menu.html">Меню</a>
+            <a href="../stocks.html">Акции</a>
+            <a href="../information.html">Информация</a>
+        </div>
+        <div class="img-list" onclick="menuClick()"><img src="../src/img/list-text.png"></div>
+        <div id="dropdown" class="list">
+            <a href="../menu.html"><li>Меню</li></a>
+            <a href="../stocks.html"><li>Акции</li></a>
+            <a href="../information.html"><li>Информация</li>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="content">
+        <div class="img-head"><img src="../src/img/menu12.jpeg"></div>
+        <h2>Морковный кекс с цукатами и грецкими орехами</h2>
+        <div class="info">
+            <div class="one">
+                <span class="title">Вес, г</span>
+                <span class="head">410</span> <br>
+                <span class="title">Энергетическая ценность, ккал/100 г</span>
+                <span class="head">353</span>
+            </div>
+            <div class="two">
+                <p class="label">Пищевая ценность</p>
+                <li><span class="title">Белки, г/100 г</span><span class="head">4,4</span></li>
+                <li><span class="title">Жиры, г/100 г</span><span class="head">19,5</span></li>
+                <li><span class="title">Углеводы, г/100 г</span><span class="head">41,0</span></li>
+                <p class="margin label">Срок годности</p>
+                <span class="info-label">5 суток при температуре от +2 до +5 °C</span>
+            </div>
+            <div class="three">
+                <p class="label">Состав</p>
+                <span class="info-label">Мука пшеничная, меланж яичный, морковь, изюм светлый, цукаты из апельсина,
+                    сахар, грецкие орехи, белый шоколад, масло растительное, масло сливочное 82%, вода, корица молотая,
+                    лимонный сок, разрыхлитель, соль.</span>
+            </div>
+        </div>
+        <div class="btn-back"><a href="../menu.html"><span>Вернуться к меню</span></a></div>
+    </div>
+    <div class="footer">
+        <img src="../src/img/vk-social-logotype.png" alt="vk">
+        <img src="../src/img/instagram.png" alt="instagramm">
+        <img src="../src/img/facebook.png" alt="facebook"> <br>
+        <span>2020</span>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+.row-4, .btn-reserv {
+    text-align: center;
+}
+
+/*слайдер*/
+.row-4, .btn-reserv {
+    background-color: #5f0f40;
+}
+
+.item {
+    opacity: 0;
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+/*еще немного информации*/
+.row-3 p, .row-4 p {
+    margin: 2rem 0;
+}
+
+.row-4 p {
+    font: 2.5rem Circe;
+}
+
+.row-4 p, .row-4 p a, .btn-reserv {
+    color: #fb8b24;
+}
+
+/*снова кнопка*/
+.btn-reserv {
+    display: block;
+    margin: 2rem auto;
+    line-height: 5rem;
+    text-decoration: none;
+    font: 2.5rem Circe;
+    width: 25rem;
+    border: 3px solid #fb8b24;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+/*наведение на кнопку*/
+.btn-reserv:hover{
+    background-color: #9a031e;
+}
+
+.img {
+    display: inline-block;
+    border: 3px solid #5f0f40;
+    margin: 0.5rem;
+}
+
+.commit {
+    width: 25rem;
+    height: 25rem;
+}
+
+/*АДАПТИВ*/
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .img {
+        margin: 1rem;
+    }
+
+    .commit {
+        width: 28rem;
+        height: 28rem;
+    }
+}
+
+@media (max-width: 767px) {
+     .row-4 p {
+        font: 2rem Circe;
+    }
+
+    .btn-reserv {
+        line-height: 3rem;
+        width: 20rem;
+        font-size: 2rem;
+    }
+
+    .commit {
+        width: 20rem;
+        height: 20rem;
+    }
+}

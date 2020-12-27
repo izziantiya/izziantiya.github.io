@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ресторан</title>
+    <link rel="shortcut icon" href="src/img/coffee-cup.png" type="image/png">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/restaurant.css">
+    <script src="src/js/click.js"></script>
+</head>
+<body>
+<!--шапка страницы-->
+<div class="header">
+    <!--главная надпись-->
+    <div class="header-text">
+        <a href="header.html">Ресторан</a>
+    </div>
+    <!--меню-->
+    <div class="menu">
+        <div class="row">
+            <a href="menu.html">Меню</a>
+            <a href="stocks.html">Акции</a>
+            <a href="information.html">Информация</a>
+        </div>
+        <div class="img-list" onclick="menuClick()"><img src="src/img/list-text.png"></div>
+        <div id="dropdown" class="list">
+            <a href="menu.html"><li>Меню</li></a>
+            <a href="stocks.html"><li>Акции</li></a>
+            <a href="information.html"><li>Информация</li>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="info-header">
+        <div class="info">Телефон: +7 985 777 77 77<br>
+            Москва, пр. Вернадского, 78 <br>
+            м. Юго-Западная</div>
+        <div class="reserv">Забронировать столик вы можете в любое время суток</div>
+        <a href="form.html" class="btn-reserv"><span>Забронировать</span></a>
+        <div class="best">Один из лучших ресторанов Москвы</div>
+    </div>
+    <div class="footer">
+        <img src="src/img/vk-social-logotype.png" alt="vk">
+        <img src="src/img/instagram.png" alt="instagramm">
+        <img src="src/img/facebook.png" alt="facebook"> <br>
+        <span>2020</span>
+    </div>
+</div>
+</body>
+</html>
