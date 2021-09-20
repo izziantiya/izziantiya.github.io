@@ -1,0 +1,12 @@
+.component-app {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) { 
+  .component-app {
+    display: none;
+  }
+}
